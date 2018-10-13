@@ -7,6 +7,9 @@
     @include fj(flex-start,center);
     flex-direction: column;
     background: #d0eefc;
+    position: relative;
+    right: -374px;
+    transition: 0.5s all ease;
     padding: 0 17px;
     height: 766px;
     .update-protocol{
