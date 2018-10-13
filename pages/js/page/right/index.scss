@@ -9,6 +9,7 @@
     background: #d0eefc;
     padding: 0 17px;
     height: 766px;
+    font-family: Microsoft YaHei;
     .update-protocol{
         @include fj(center,center);
         flex-direction: column;
@@ -132,5 +133,64 @@
         ul:last-child{
             border: none;
         }
+    }
+    .selectdevice{
+        width: 338px;
+        font-size: 18px;
+        color: #313131;
+        font-family: Microsoft YaHei;
+        font-weight: normal;
+        border: 1px solid #1479bd; 
+        margin-top: 28px;
+        h3{
+            padding-left: 17px;
+            height: 28px;
+            line-height: 28px;
+            background: #347bbe;
+            color: #fff;
+            font-size: 18px;
+        }
+        ul{
+            height: 277px;
+            margin-left:9px; 
+            padding-top: 8px;
+            li {
+                padding: 0px 0 0px 29px;
+                line-height: 28px;
+                background: url('./img/dx01.png') 0 6px no-repeat;
+                background-size: 16px 16px;
+            }
+            li.selected{
+                background-image: url('./img/dx02.png');
+            }
+        }
+    }
+    .devicemsg{
+        padding-top: 27px;
+        line-height: 35px;
+        font-size: 18px;
+        color: #313131;
+        width: 338px;
+        font-family: Microsoft YaHei;
+        font-weight: normal;
+        
+        .box{
+            height: 35px;
+            padding-bottom: 7px;
+        }
+        input{
+            width: 249px;
+            height: 33px;
+            float:right;
+            border: 1px solid #1479bd; 
+        }
+    }
+    .okbtn{
+        height: 40px;
+        margin-top: 30px;
+        width: 179px;
+        background: url('./img/queding.png') no-repeat;
+        background-size: contain;
+        border: 0;
     }
 }
