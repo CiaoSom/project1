@@ -3,4 +3,11 @@
     margin: 0 auto;
     font-family: Microsoft YaHei;
     font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.hide{
+    display: none;
 }

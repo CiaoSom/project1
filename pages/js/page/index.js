@@ -20,3 +20,6 @@ require('zepto');
 //head头
 var head = require('./head/index.js');
 new head($('.main'));
+
+var right = require('./right/index.js');
+new right($('.main') , 'type1');

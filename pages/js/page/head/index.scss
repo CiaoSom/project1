@@ -9,7 +9,8 @@
     margin: 0 auto;
     padding-bottom: 28px;
     padding-left: 16px;
-    padding-right: 15px;
+    // padding-right: 15px;
+    width: 100%;
     .head-top{
         padding: 23px 10px 28px 0;
         display: flex; 
@@ -99,7 +100,12 @@
                padding: 5px 0 5px 5px;
                box-sizing: border-box;
             }
-            li.selected,li:hover {
+            li.selected{
+                background: #3a94d8;
+                color: #fff;
+            }
+            li:hover {
+                transition: all 0.1s;
                 background: #3a94d8;
                 color: #fff;
             }

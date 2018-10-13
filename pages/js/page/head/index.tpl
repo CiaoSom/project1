@@ -8,13 +8,13 @@
     <div class="head-bottom">
         <div class="check-box">
             <div class="all">
-                <div class="checkBox selected"></div>
+                <div class="checkBox"></div>
                 <p>全部</p>
             </div>
             <div class="list">
                 <div class="checkBox"></div>
                 <p class="tag"><span class="name">所有楼号</span><span class="down"></span></p>
-                <ul>
+                <ul class="column hide">
                     <li class="selected">所有楼号</li>
                     <li>1号楼</li>
                     <li>2号楼</li>
@@ -27,7 +27,7 @@
             <div class="list">
                 <div class="checkBox"></div>
                 <p class="tag"><span class="name">所有楼号</span><span class="down"></span></p>
-                <ul>
+                <ul class="column hide">
                     <li class="selected">所有楼号</li>
                     <li>1号楼</li>
                     <li>2号楼</li>
@@ -40,7 +40,7 @@
             <div class="list">
                 <div class="checkBox"></div>
                 <p class="tag"><span class="name">所有楼号</span><span class="down"></span></p>
-                <ul>
+                <ul class="column hide">
                     <li class="selected">所有楼号</li>
                     <li>1号楼</li>
                     <li>2号楼</li>
@@ -53,6 +53,10 @@
             <div class="list">
                 <div class="checkBox"></div>
                 <p class="tag"><span class="name">所有热表类型</span><span class="down"></span></p>
+                <ul class="column hide">
+                    <li class="selected">所有热表类型</li>
+                    <li>1号楼</li>
+                </ul>
             </div>
         </div>
         <div class="import-down"></div>
