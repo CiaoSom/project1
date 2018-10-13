@@ -52,6 +52,11 @@ head.prototype = {
         $(document).on('click' , function(e){
             $('.column').addClass('hide');
         })
+        $('.head-top .file').on('change' , function(e) {
+            // console.log(this.value)
+            // console.log(this.files)
+            $('.head-top .mask').text($(this).val());
+        })
     },
     updateCheckBox : function() {
         var names =  $('.list .name');
@@ -59,6 +64,9 @@ head.prototype = {
         names.forEach( function(el , index){
             $(el).text(columns.eq(index).find('li').eq(0).text());
         })
+    },
+    uplaodFile : function(){
+
     }
 }
 module.exports = head;
