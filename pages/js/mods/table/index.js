@@ -7,14 +7,15 @@ var header = ['', "姓名", "编号", "楼号", "单元号", "高低区", "类�
 var AJAX = require('util/request');
 var right = require('../right/index.js');
 module.exports = {
-    init: function(size, page,status) {
+    init: function(size, page,status,type) {
         // console.log(data)
+        this.type=type
         const chunkArray = chunk(data, size);
         // console.log(chunk(data, size))
         $('tbody,thead').empty();
         $('tbody').append(tr({
             data: chunkArray[page],
-            type:0,
+            type:type,
         }));
         $('thead').append(th({
             header: header
@@ -90,7 +91,13 @@ module.exports = {
     },
     analysis: function(id) {
         console.log('解析编号为-->>', id, '的机器')
-        new right($('.main') , 'type1',id);
+        var type='';
+        if(this.type==0){
+            type='type1'
+        }else if(this.type==1){
+            type='type3'
+        }
+        new right($('.main') , type,id);
     },
     goUninstall: function(id) {
         console.log('卸载编号为-->>', id, '的机器')

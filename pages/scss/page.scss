@@ -1,3 +1,22 @@
 .container{
 	width:1506px;
 }
+.main {
+    width: 1506px;
+    margin: 0 auto;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.hide{
+    display: none;
+}
+.rightIn{
+	right:0!important;
+}
+.table-box {
+    height:706px!important;
+}

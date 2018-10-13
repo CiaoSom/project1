@@ -9,9 +9,9 @@ $("select#size").change(function(){
      var size = $(this).val();
      var page = Math.ceil(data.length / size); 
      $('.pages').html(page)
-     pagination.init(size,page);
+     pagination.init(size,page,0);
 });
-pagination.init(20,Math.ceil(data.length / 20));
+pagination.init(20,Math.ceil(data.length / 20),0);
 //head头
 var head = require('../mods/head/index.js');
 new head($('.head'));
