@@ -10,6 +10,9 @@
     padding: 0 17px;
     height: 766px;
     font-family: Microsoft YaHei;
+    position: relative;
+    right: -374px;
+    transition: 0.5s all ease;
     .update-protocol{
         @include fj(center,center);
         flex-direction: column;
