@@ -53,8 +53,6 @@ head.prototype = {
             $('.column').addClass('hide');
         })
         $('.head-top .file').on('change' , function(e) {
-            // console.log(this.value)
-            // console.log(this.files)
             $('.head-top .mask').text($(this).val());
         })
     },

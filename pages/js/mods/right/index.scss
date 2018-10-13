@@ -165,6 +165,7 @@
                 line-height: 28px;
                 background: url('./img/dx01.png') 0 6px no-repeat;
                 background-size: 16px 16px;
+                cursor: pointer;
             }
             li.selected{
                 background-image: url('./img/dx02.png');
@@ -189,6 +190,8 @@
             height: 33px;
             float:right;
             border: 1px solid #1479bd; 
+            padding-left:10px; 
+            font-size: 16px;
         }
     }
     .okbtn{

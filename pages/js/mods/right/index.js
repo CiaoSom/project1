@@ -22,7 +22,9 @@ right.prototype = {
               data:id
             }));
             $('.selectdevice li').on('click' , function(){
-                $(this).hasClass('selected') ? $(this).removeClass('selected') : $(this).addClass('selected');
+                // $(this).hasClass('selected') ? $(this).removeClass('selected') : $(this).addClass('selected');
+                $(this).siblings().removeClass('selected');
+                $(this).addClass('selected');
             })
        }
        $('.right').addClass('rightIn');
