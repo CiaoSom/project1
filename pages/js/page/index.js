@@ -13,7 +13,7 @@ $("select#size").change(function(){
 });
 pagination.init(20,Math.ceil(data.length / 20));
 //head头
-var head = require('./head/index.js');
+var head = require('../mods/head/index.js');
 new head($('.head'));
 
 // var right = require('./right/index.js');

@@ -5,7 +5,7 @@ require('./index.scss');
 var data = require('const/data.js').data;
 var header = ['', "姓名", "编号", "楼号", "单元号", "高低区", "类别", "操作", "删除"];
 var AJAX = require('util/request');
-var right = require('../../page/right/index.js');
+var right = require('../right/index.js');
 module.exports = {
     init: function(size, page) {
         // console.log(data)
