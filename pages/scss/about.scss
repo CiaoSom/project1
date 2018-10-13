@@ -1,0 +1,104 @@
+.container{
+	width: 1507px;
+	height: 766px;	
+	border: 1px solid #22578e;
+	position: relative;
+}
+.titlemain{
+	height: 50px;
+	 background: linear-gradient(#22578e, #438ccf); /* 标准的语法 */
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+	 z-index: 1;
+}
+.mainArea .title{
+	height: 50px;
+	 background: linear-gradient(#22578e, #438ccf); /* 标准的语法 */
+
+}
+.titlemain h1,.mainArea .title p{
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	margin-left: 27px;
+}
+.mainArea{
+	width: 1109px;
+	float: left;
+	background: #fff;
+	height: 100%;
+}
+.rightArea{
+	float: left;
+	width: 398px;
+	height: 100%;
+	background: #d0eefc;
+	position: relative;
+}
+.descriptbox{
+	width: 674px;
+	height: 328px;
+	border: 1px solid #22578e;
+	margin: 0 auto;
+}
+.versionContents{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 15px;
+	height: 248px;
+	overflow-y: scroll;
+}
+.versiontitle,.versionMainContent{
+	font-size: 18px;
+	line-height: 20px;
+	color: #313131;
+}
+.versionNum{
+	width: 676px;
+	color: #2f79c0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	margin: 80px auto 28px;
+}
+.picyindao{
+	width: 264px;
+	height: 245px;
+	background: url('../img/img01.png');
+	position: absolute;
+	top: 433px;
+	left: 57px;
+}
+.help{
+	position: absolute;
+	width: 74px;
+	height: 30px;
+	left: 257px;
+	top: 89px;
+	line-height: 30px;
+}
+.help a{
+	color: #323232;
+	font-size: 18px;
+	margin-left: 5px;
+}
+.help-icon{
+	width: 28px;
+	height: 28px;
+	background: url('../img/bz.png');
+	float: left;
+}
+.up{
+	width: 200px;
+	height: 40px;
+	background: url('../img/sjgj.png');
+	margin: 36px auto 0;
+	cursor: pointer;
+}
+.versionItem{
+	margin-bottom: 5px;
+}
+.versiontitle{
+	font-weight: 700;
+}
