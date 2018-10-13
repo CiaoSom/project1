@@ -1,5 +1,13 @@
-.hello {
-    width: 1rem;
-    margin: auto;
-    color: blue;
+.main {
+    width: 1506px;
+    margin: 0 auto;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.hide{
+    display: none;
 }

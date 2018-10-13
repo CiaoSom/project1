@@ -1,0 +1,136 @@
+@mixin fj($f,$j) {
+    display: flex;
+    justify-content: $f;
+    align-items: $j;
+}
+.right {
+    @include fj(flex-start,center);
+    flex-direction: column;
+    background: #d0eefc;
+    padding: 0 17px;
+    height: 766px;
+    .update-protocol{
+        @include fj(center,center);
+        flex-direction: column;
+        .title{
+            height: 40px;
+            margin-top: 28px;
+            width: 179px;
+            background: url('./img/gxjxxy.png') no-repeat;
+            background-size: contain;
+            border: 0;
+        }
+    }
+    .lower{
+        @include fj(center,center);
+        flex-direction: column;
+        .title {
+            height: 40px;
+            margin-top: 24px;
+            width: 179px;
+            background: url('./img/xiafa.png') no-repeat;
+            background-size: contain;
+            border: 0;
+         }
+    }
+    .scripts{
+        width: 338px;
+        height: 125px;
+        margin-top: 10px;
+        background: #fff;
+        border: 1px solid #1479bd; 
+        h2 {
+            // font-family: 
+            line-height: 28px;
+            font-size: 18px;
+            color: #331111;
+            height: 28px;
+            padding-left: 14px;
+        }
+        p{
+            height: 82px;
+            overflow-x: hidden;
+            margin: 8px 14px;
+        }
+    }
+    .test,.feedback,.result{
+        width: 338px;
+        border: 1px solid #1479bd; 
+        
+        h2 {
+            line-height: 28px;
+            font-size: 18px;
+            color: #fff;
+            background: #1479bd;
+            height: 28px;
+            padding-left: 14px;
+        }
+        p{
+            padding: 12px 14px;
+            background: #fff;
+            overflow-x:hidden; 
+            box-sizing: border-box;
+        }
+    }
+    .test {
+        margin-top: 14px;
+        p{
+            height: 127px;
+        }
+    }
+    .feedback {
+        margin-top: 18px;
+        p{
+            height: 82px;
+        }
+    }
+    .result {
+        margin-top: 16px;
+        p{
+            height: 114px;
+        }
+    }
+    .testmsg {
+        padding-top: 37px;
+        padding-bottom: 21px;
+        color: #313131;
+        line-height: 18px;
+        font-size: 18px;
+    }
+    .testinput{
+        width: 338px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #1479bd; 
+        padding-left:10px; 
+        font-size: 16px;
+    }
+    .titles{
+        height: 40px;
+        margin-top: 28px;
+        width: 179px;
+        background: url('./img/xiafa.png') no-repeat;
+        background-size: contain;
+        border: 0;
+    }
+    .msg {
+        margin-top: 33px;
+        border: 1px solid #1479bd; 
+        background: #fff;
+        width: 338px;
+        height: 513px;
+        ul{
+            line-height: 29px;
+            margin:0 9px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #aaaaaa; 
+            li {
+                padding-left: 8px;
+            }
+        }
+        ul:last-child{
+            border: none;
+        }
+    }
+}
