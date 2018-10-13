@@ -7,7 +7,7 @@ var header = ['', "姓名", "编号", "楼号", "单元号", "高低区", "类�
 var AJAX = require('util/request');
 var right = require('../right/index.js');
 module.exports = {
-    init: function(size, page) {
+    init: function(size, page,status) {
         // console.log(data)
         const chunkArray = chunk(data, size);
         // console.log(chunk(data, size))
@@ -19,7 +19,10 @@ module.exports = {
         $('thead').append(th({
             header: header
         }));
-        this.methods();
+        if(!status){
+            this.methods();
+        }
+        
     },
     methods: function() {
         const _this = this;
