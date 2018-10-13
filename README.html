@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link href='http://n.sinaimg.cn/finance/cece9e13/20180316/markfx.css' rel='stylesheet' type='text/css'><title>README</title></head><body><article class="markdown-body"><h1 id="webpack"><a name="user-content-webpack" href="#webpack" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Webpack 开发环境搭建</h1>
+<blockquote>
+<p>本项目为开发脚手架，从svn下载后，请另行拷贝一份开始新项目的开发，不要上传业务代码到本项目。</p>
+</blockquote>
+<h2 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1 安装</h2>
+<h3 id="11-nodejs-8x"><a name="user-content-11-nodejs-8x" href="#11-nodejs-8x" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.1 安装Node.js 8.x版本</h3>
+<p><a href="http://nodejs.org/">Node.js 官网地址</a></p>
+<h3 id="12-npm"><a name="user-content-12-npm" href="#12-npm" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.2 用npm安装依赖包</h3>
+<p>进入项目的根目录后执行：<br />
+<pre><code>$ npm install
+</code></pre></p>
+<p><strong>注意：如果是Mac环境，需要安装libpng：</strong><br />
+<pre><code>$ brew install libpng
+</code></pre></p>
+<h2 id="2-host"><a name="user-content-2-host" href="#2-host" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2 绑定host</h2>
+<h3 id="21-windows"><a name="user-content-21-windows" href="#21-windows" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1 <a href="https://jingyan.baidu.com/article/c45ad29c1dd610051653e25c.html">Windows环境</a></h3>
+<p>在 <code>C:\windows\system32\drivers\etc\hosts</code> 文件中添加：<br />
+<pre><code>127.0.0.1 test.sina.cn
+</code></pre></p>
+<h3 id="22-mac"><a name="user-content-22-mac" href="#22-mac" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2 <a href="https://jingyan.baidu.com/article/fec4bce2690417f2618d8b07.html">Mac环境</a></h3>
+<p>在 <code>/etc/hosts</code> 文件中添加：<br />
+<pre><code>127.0.0.1 test.sina.cn
+</code></pre></p>
+<h2 id="3"><a name="user-content-3" href="#3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3 运行命令</h2>
+<p><strong>注意在Mac环境下执行以下命令时，命令前需要加sudo</strong></p>
+<h3 id="31"><a name="user-content-31" href="#31" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.1 开发环境</h3>
+<pre><code>$ npm run dev
+</code></pre>
+
+<h3 id="32"><a name="user-content-32" href="#32" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.2 打包生产环境代码</h3>
+<pre><code>$ npm run build
+</code></pre>
+
+<h2 id="4"><a name="user-content-4" href="#4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4 新建文件</h2>
+<h3 id="41-html"><a name="user-content-41-html" href="#41-html" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.1 新建HTML文件</h3>
+<p>在<code>pages/html</code>文件夹下新建一个名为 <code>index.html</code> 的文件，编写相关的HTML结构：<br />
+<pre><code class="html">&lt;div class=&quot;hello&quot;&gt;Hello World&lt;/div&gt;
+</code></pre></p>
+<h3 id="42-css"><a name="user-content-42-css" href="#42-css" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.2 新建CSS文件</h3>
+<p>在<code>pages/scss</code>文件夹下新建一个名为 <code>index.scss</code> 的文件，编写<code>index.html</code>需要引用的样式：<br />
+<pre><code class="css">.hello {color: red}
+</code></pre></p>
+<h3 id="43-js"><a name="user-content-43-js" href="#43-js" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.3 新建JS文件</h3>
+<p>在<code>pages/js/page</code>文件夹下新建一个名为 <code>index.js</code> 的文件：</p>
+<h4 id="431"><a name="user-content-431" href="#431" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.3.1 引入样式文件</h4>
+<pre><code class="javascript">require('scss/index.scss');
+</code></pre>
+
+<h4 id="432"><a name="user-content-432" href="#432" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.3.2 编写业务代码</h4>
+<pre><code class="javascript">console.log('Hello World');
+</code></pre></article></body></html>
