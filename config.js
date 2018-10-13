@@ -5,7 +5,7 @@ const _md5 = ENV == 'production'? true :false
 module.exports = {
     port: 80,
     publicPath: 'http://test.sina.cn', //已http或者https开头的绝对地址，请勿以'/'结尾
-    onLinePublicPath: '//simg.sinajs.cn/products/news/items/2018/foreign_ministry/', //线上静态资源地址
+    onLinePublicPath: './', //线上静态资源地址
     md5: 'chunkhash', //false：不加md5值。hash：全部资源公用一个hash。chunkhash：单文件一个hash值。
     isHashJs: _md5,
     isHashCss:_md5,
