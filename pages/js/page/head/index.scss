@@ -1,0 +1,129 @@
+@mixin fj($f,$j) {
+    display: flex;
+    justify-content: $f;
+    align-items: $j;
+}
+
+.head{
+    background: #f8fbfc;
+    margin: 0 auto;
+    padding-bottom: 28px;
+    padding-left: 16px;
+    padding-right: 15px;
+    .head-top{
+        padding: 23px 10px 28px 0;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .mask {
+            width: 608px;
+            height: 38px;
+            padding-left: 23px;
+            border: 1px solid #4983ad;
+            background: #fff;
+            color: #313131;
+            font-size: 18px;
+            line-height: 38px;
+            box-sizing: border-box;
+        }
+        .file {
+            position: absolute;
+            top: 23px;
+            left: 0;
+            width: 608px;
+            height: 40px;
+            opacity: 0;
+
+        }
+        .import-in{
+            height: 40px;
+            margin-left: 25px;
+            width: 127px;
+            background: url('./img/daoru.png') no-repeat;
+            background-size: contain;
+            border: 0;
+        }
+        .analysis{
+            flex: auto;
+            height: 40px;
+            margin-left: 91px;
+            width: 249px;
+            background: url('./img/pl.png') no-repeat;
+            background-size: contain;
+            border: 0;
+        }   
+    }
+    .head-bottom {
+        @include fj(space-between , center);
+        .check-box{
+            @include fj(flex-start , center);
+            .all{
+                @include fj(flex-start , center);
+                .checkBox {
+                    margin-right: 9px;
+                }
+            }
+        }
+        .list {
+            @include fj(flex-start , center);
+            font-size: 18px;
+            color: #313131;
+            position: relative;
+            .tag{
+                cursor: pointer;
+                min-width: 136px;
+                border: 1px solid #4983ad;
+                padding: 5px 5px 5px 5px;
+                box-sizing: border-box;
+                @include fj(space-between , center);
+                .down {
+                    height: 14px;
+                    width: 17px;
+                    background: url('./img/xiala.png') no-repeat;
+                    background-size: contain;
+                    margin-left: 5px;
+                }
+            }
+            ul {
+                position: absolute;
+                top:38px;
+                left:52px;
+                cursor: pointer;
+                width: 134px;
+                height: 169px;
+                overflow-x:hidden; 
+                border: 1px solid #4983ad;
+            }
+            li {
+               padding: 5px 0 5px 5px;
+               box-sizing: border-box;
+            }
+            li.selected,li:hover {
+                background: #3a94d8;
+                color: #fff;
+            }
+        }
+        .checkBox{
+            height: 21px;
+            margin-left: 16px;
+            margin-right: 15px;
+            width: 21px;
+            background: url('./img/danxuan01.png') no-repeat;
+            background-size: contain;
+            border: 0;
+        }
+        .checkBox.selected {
+            background-image: url('./img/danxuan02.png');
+        }
+        .import-down {
+            height: 40px;
+            width: 127px;
+            background: url('./img/daochu.png') no-repeat;
+            background-size: contain;
+            border: 0;
+            flex: auto;
+            margin-left: 136px;
+        }
+    }
+}

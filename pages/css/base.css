@@ -14,4 +14,3 @@ input[type="button"],button{ -webkit-appearance: none; }
 body {-webkit-overflow-scrolling: touch;overflow-scrolling: touch;}
 .hide{display: none !important;}
 .main{position: relative;width: 100%;}
-@media screen and (min-width: 769px) {.main {position: relative; width: 750px; margin: 0 auto;}}

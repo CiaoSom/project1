@@ -16,3 +16,7 @@ require('zepto');
 //     console.log('以下是接口' + API.MOCK_1 + '的mock数据：\n');
 //     console.log(JSON.stringify(data, null, 4));
 // });
+
+//head头
+var head = require('./head/index.js');
+new head($('.main'));
