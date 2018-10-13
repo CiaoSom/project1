@@ -1,7 +1,7 @@
 <div class="right">
     <div>
         <p class="testmsg">测试报文</p>
-        <input type="text" class="testinput">
+        <input type="text" class="testinput" value="{{data}}">
     </div>
     <div class="titles"></div>
     <div class="msg">

@@ -14,8 +14,12 @@
         <div class="cell" style="width: 800px;">
         	<a href="javascript:;" class="modify" data-id="{{obj.id}}">修改</a>
         	<a href="javascript:;" style="margin-right: 26px;margin-left: 32px;" data-id="{{obj.id}}">解析协议</a>
-        	<!-- <a href="javascript:;" data-id="{{obj.id}}">批量调试</a> -->
+            {{if type==0}}
+        	<a href="javascript:;" data-id="{{obj.id}}">批量调试</a>
+            {{/if}}
+            {{if type==1}}
         	<a href="javascript:;"  data-id="{{obj.id}}">卸载</a>
+            {{/if}}
         </div>
     </td>
     <td>

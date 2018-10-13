@@ -2,7 +2,7 @@
     <div class="selectdevice">
         <h3>选择设备</h3>
         <ul>
-            <li>SMES</li>
+            <li>{{data}}</li>
             <li>SMES</li>
             <li>SMES</li>
             <li>SMES</li>

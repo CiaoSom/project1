@@ -13,7 +13,8 @@ module.exports = {
         // console.log(chunk(data, size))
         $('tbody,thead').empty();
         $('tbody').append(tr({
-            data: chunkArray[page]
+            data: chunkArray[page],
+            type:0,
         }));
         $('thead').append(th({
             header: header
@@ -79,6 +80,7 @@ module.exports = {
     },
     debugAll: function(id) {
         console.log('调试编号为-->>', id, '的机器')
+        new right($('.main') , 'type2',id);
     },
     delete: function(id) {
         console.log('删除编号为-->>', id, '的机器')

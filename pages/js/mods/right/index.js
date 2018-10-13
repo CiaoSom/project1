@@ -14,9 +14,13 @@ right.prototype = {
               data:id
             }));
        }else if(type == 'type2'){
-            dom.append(tpl2());
+            dom.append(tpl2({
+              data:id
+            }));
        }else {
-            dom.append(tpl3());
+            dom.append(tpl3({
+              data:id
+            }));
             $('.selectdevice li').on('click' , function(){
                 $(this).hasClass('selected') ? $(this).removeClass('selected') : $(this).addClass('selected');
             })
