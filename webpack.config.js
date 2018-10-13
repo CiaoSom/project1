@@ -87,6 +87,7 @@ module.exports = {
             'util': path.join(__dirname, 'pages', 'js', 'util'),
             'lib': path.join(__dirname, 'pages', 'js', 'lib'),
             'zepto': path.join(__dirname, 'pages', 'js', 'lib', 'zepto.1.2.0.min.js'),
+            'jquery': path.join(__dirname, 'pages', 'js', 'lib', 'jquery-1.11.1.min.js'),
             'es5-shim': path.join(__dirname, 'node_modules', 'es5-shim', 'es5-shim.min.js'),
             'es5-sham': path.join(__dirname, 'node_modules', 'es5-shim', 'es5-sham.min.js')
         }, spriteAlias)
