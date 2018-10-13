@@ -13,5 +13,13 @@ video::-webkit-media-controls-start-playback-button {display: none;}
 input[type="button"],button{ -webkit-appearance: none; }
 body {-webkit-overflow-scrolling: touch;overflow-scrolling: touch;}
 .hide{display: none !important;}
+.clearfix:after {
+    content: " ";
+    display: block;;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
 .main{position: relative;width: 100%;}
 @media screen and (min-width: 769px) {.main {position: relative; width: 750px; margin: 0 auto;}}
