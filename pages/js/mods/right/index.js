@@ -17,6 +17,9 @@ right.prototype = {
             dom.append(tpl2());
        }else {
             dom.append(tpl3());
+            $('.selectdevice li').on('click' , function(){
+                $(this).hasClass('selected') ? $(this).removeClass('selected') : $(this).addClass('selected');
+            })
        }
        $('.right').addClass('rightIn');
        $('.container').addClass('width1130');
