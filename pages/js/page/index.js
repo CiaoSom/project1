@@ -3,23 +3,20 @@ require('css/base.css');
 require('scss/index.scss');
 // require('lib/jquery-1.11.1.min.js');
 require('zepto');
-
-// Mock.js 用法示例
-// var API = require('const/api');
-// var AJAX = require('util/request');
-
-// AJAX.request({
-//     url: API.MOCK_1,
-//     dataType: 'json',
-//     type: 'GET'
-// }, function(data, status, xhr) {
-//     console.log('以下是接口' + API.MOCK_1 + '的mock数据：\n');
-//     console.log(JSON.stringify(data, null, 4));
-// });
-
+var pagination = require('mods/loadpage');
+var data= require('const/data.js').data;
+$("select#size").change(function(){
+     var size = $(this).val();
+     var page = Math.ceil(data.length / size); 
+     $('.pages').html(page)
+     pagination.init(size,page);
+});
+pagination.init(20,Math.ceil(data.length / 20));
 //head头
 var head = require('./head/index.js');
-new head($('.main'));
+new head($('.head'));
 
-var right = require('./right/index.js');
-new right($('.main') , 'type1');
+// var right = require('./right/index.js');
+// new right($('.main') , 'type1');
+
+

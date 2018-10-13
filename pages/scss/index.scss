@@ -6,8 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: hidden;
+    
 }
 .hide{
     display: none;
+}
+.rightIn{
+	right:0!important;
 }

@@ -1,4 +1,4 @@
-<div class="head">
+
     <div class="head-top">
         <input type="file" class="file">
         <div class="mask">批量导入数据</div>
@@ -61,4 +61,3 @@
         </div>
         <div class="import-down"></div>
     </div>
-</div>

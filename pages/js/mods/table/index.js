@@ -5,11 +5,12 @@ require('./index.scss');
 var data = require('const/data.js').data;
 var header = ['', "姓名", "编号", "楼号", "单元号", "高低区", "类别", "操作", "删除"];
 var AJAX = require('util/request');
+var right = require('../../page/right/index.js');
 module.exports = {
     init: function(size, page) {
         // console.log(data)
         const chunkArray = chunk(data, size);
-        console.log(chunk(data, size))
+        // console.log(chunk(data, size))
         $('tbody,thead').empty();
         $('tbody').append(tr({
             data: chunkArray[page]
@@ -84,6 +85,7 @@ module.exports = {
     },
     analysis: function(id) {
         console.log('解析编号为-->>', id, '的机器')
+        new right($('.main') , 'type1',id);
     },
     goUninstall: function(id) {
         console.log('卸载编号为-->>', id, '的机器')

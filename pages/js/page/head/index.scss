@@ -9,6 +9,7 @@
     margin: 0 auto;
     padding-bottom: 28px;
     padding-left: 16px;
+    ransition: all .5s ease;
     // padding-right: 15px;
     width: 100%;
     .head-top{
@@ -46,13 +47,15 @@
             border: 0;
         }
         .analysis{
-            flex: auto;
+            
             height: 40px;
             margin-left: 91px;
-            width: 249px;
+            width: 247px;
             background: url('./img/pl.png') no-repeat;
             background-size: contain;
             border: 0;
+            float:left;
+            margin-right:19px;
         }   
     }
     .head-bottom {
@@ -128,8 +131,8 @@
             background: url('./img/daochu.png') no-repeat;
             background-size: contain;
             border: 0;
-            flex: auto;
-            margin-left: 136px;
+            float:right;
+            margin-right: 28px;
         }
     }
 }

@@ -2,8 +2,8 @@
     <div class="update-protocol">
         <div class="title"></div>
         <div class="scripts">
-            <h2>脚本</h2>
-            <p></p>
+            <h2>数据编号</h2>
+            <p>{{data}}</p>
         </div>
         <div class="test">
             <h2>测试</h2>
